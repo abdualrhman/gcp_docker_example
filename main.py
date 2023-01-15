@@ -1,6 +1,7 @@
 from sklearn import datasets, svm, metrics
 from sklearn.model_selection import train_test_split
 
+# some changes
 
 if __name__ == '__main__':
     digits = datasets.load_digits()
@@ -27,4 +28,3 @@ if __name__ == '__main__':
         f"Classification report for classifier {clf}:\n"
         f"{metrics.classification_report(y_test, predicted)}\n"
     )
-
